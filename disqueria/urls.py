@@ -1,4 +1,4 @@
-from django.contrib import admin
+
 from django.urls import path
 from .views import (home, Contacto, About, ProyectoIntegrador, CrearFormato, EliminarFormato, EditarFormato, ListarFormato ,MostrarFormato,
 CrearAlbum, EliminarAlbum ,EditarAlbum , ListarAlbum, MostrarAlbum, CrearTema, EliminarTema, EditarTema, ListarTema, MostrarTema, 
@@ -7,7 +7,7 @@ CrearDiscografica,  EliminarDiscografica, EditarDiscografica, ListarDiscografica
 
 urlpatterns = [
 
-    path('admin/', admin.site.urls),
+   
     path('',home, name="index"),  
     path('contacto/', Contacto.as_view(), name="contacto"),
     path('about/', About.as_view(), name="about"),
