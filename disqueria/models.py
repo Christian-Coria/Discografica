@@ -2,10 +2,23 @@ from django.db import models
 
 
 class Formato(models.Model):
-    pass # a completar por mateo
+    tipo = models.CharField(max_length=40)
+
+    def __str__(self):
+       return f'{self.tipo}'
 
 class Interprete(models.Model):
-   pass # a completar por mateo
+   nombre = models.CharField(max_length=255)
+    foto = models.ImageField(upload_to="caratula", null=True, blank=True)
+
+    def __unicode__(self): 
+        return f'{self.nombre}'
+
+    class Meta:
+        ordering = ['-nombre']
+
+    def __str__(self):
+      return f'{self.nombre}'
     
 class Genero(models.Model):
     pass # a completar por lizbeth

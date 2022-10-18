@@ -69,22 +69,34 @@ class MostrarAlbum(DetailView):
 
 
 class CrearFormato(CreateView):
-    pass # a completar por Mateo
+    model = Formato
+    template_name = "integrador/crear_formato.html"
+    success_url = 'proyecto'
+    fields = ['tipo']
 
 class ListarFormato(ListView):
-    pass # a completar por Mateo
+    model = Formato
+    template_name = "integrador/listar_formato.html"
 
 
 class EditarFormato(UpdateView):
-    pass # a completar por Mateo
+    model = Formato
+    template_name ='integrador/editar_formato.html'
+    success_url = reverse_lazy('listar_formato')
+    fields = ['tipo'] 
 
 
 class EliminarFormato(DeleteView):
-    pass # a completar por Mateo
+    model =  Formato
+    template_name = "integrador/eliminar_formato.html"
+    success_url = reverse_lazy('listar_formato')
+
 
 
 class MostrarFormato(DetailView):
-    pass # a completar por Mateo
+    model = Formato
+    template_name = 'integrador/mostrar_formato.html'
+
 
 
 class CrearTema(CreateView):        

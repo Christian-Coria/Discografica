@@ -29,9 +29,17 @@ urlpatterns = [
         #NOTA: respetar los nombres de las creacion de las funciones, si los mismos deciden cambiarlos deben a su vez, 
                #cambiar el nombre en cada modulo del ruteo que corresponda!!!
 
-    # los path formato a completar por mateo
+    path('crear-formato' , CrearFormato.as_view(), name='crear_formato'),
+    path('eliminar-formato/<int:pk>' , EliminarFormato.as_view(), name='eliminar_formato'),
+    path('editar-formato/<int:pk>' , EditarFormato.as_view(), name='editar_formato'),
+    path('listar-formato' , ListarFormato.as_view(), name='listar_formato'),
+    path('mostrar-formato/<int:pk>/' , MostrarFormato.as_view(), name='mostrar_formato'),
 
-    # los path interprete a completar por mateo
+    path('crear-interprete' , CrearInterprete.as_view(), name='crear_interprete'),
+    path('eliminar-interprete/<int:pk>' , EliminarInterprete.as_view(), name='eliminar_interprete'),
+    path('editar-interprete/<int:pk>' , EditarInterprete.as_view(), name='editar_interprete'),
+    path('listar-interprete' , ListarInterprete.as_view(), name='listar_interprete'),
+    path('mostrar-interprete/<int:pk>/' , MostrarInterprete.as_view(), name='mostrar_interprete'),
 
     # los path de genero a completar por lizbeth
 

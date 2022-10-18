@@ -4,11 +4,13 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 class FormatoCreationForm(forms.Form):
-    pass # a completar por mateo
+    tipo = forms.CharField(max_length=40)
 
     
 class InterpreteCreationForm(forms.Form):
-    pass # a completar por mateo
+    nombre = forms.CharField(max_length=255)
+    foto = forms.ImageField(upload_to="caratula", null=True, blank=True)
+
 
     
 class GeneroCreationForm(forms.Form):
