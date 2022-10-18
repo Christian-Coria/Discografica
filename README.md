@@ -21,7 +21,7 @@ El sistema debe proveer los siguientes requerimientos por parte del cliente:
 
 ![](./esquema-BD.png)
 
-### Tecnologia Utilizada Django
+# Tecnologia Utilizada Django (Python)
 ## Base de datos Utilizada MySQL (aunque es posible usar mysqlite3 por defecto o otras bases de datos como Polgrest SQL con la conf.      correspondiente)
 
 [==> Casos de Prueba <==](###) <- a completar!
