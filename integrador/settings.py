@@ -76,13 +76,26 @@ WSGI_APPLICATION = 'integrador.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
+   # Base de datos sqlite3, en suspenso para el uso de una base de datos mas sostenible (MySQL), 
+   #EN CASO DE DUPLICAR EL PROYECTO SE PUEDE DESCOMENTAR ESTA SECCION Y COMENTAR EL ENLACE A MySQL ademas de correr las migraciones para la creacion de tablas.
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'disqueria_ispc',
+        'USER': 'root',
+        'PASSWORD' : 'Mateo31357058',
+        'HOST': 'localhost',
+        'PORT': ''
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
