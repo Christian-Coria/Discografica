@@ -21,6 +21,8 @@ El sistema debe proveer los siguientes requerimientos por parte del cliente:
 
 ![](./esquema-BD.png)
 
+### Tecnologia Utilizada Django
+## Base de datos Utilizada MySQL (aunque es posible usar mysqlite3 por defecto o otras bases de datos como Polgrest SQL con la conf.      correspondiente)
 
 [==> Casos de Prueba <==](###) <- a completar!
 
@@ -45,14 +47,14 @@ en sistemas *nix:
 
 ```bash
 > python --version
-> Python 3.8.0
+> Python 3.10.5
 ```
 
 en windows:
 
 ```bash
 c:\> py --version
-c:\> Python 3.8.0
+c:\> Python 3.10.5
 ## Clonar el Repositorio
 
 ```bash
