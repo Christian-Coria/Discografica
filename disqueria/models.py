@@ -8,7 +8,7 @@ class Formato(models.Model):
        return f'{self.tipo}'
 
 class Interprete(models.Model):
-   nombre = models.CharField(max_length=255)
+    nombre = models.CharField(max_length=255)
     foto = models.ImageField(upload_to="caratula", null=True, blank=True)
 
     def __unicode__(self): 
@@ -21,10 +21,16 @@ class Interprete(models.Model):
       return f'{self.nombre}'
     
 class Genero(models.Model):
-    pass # a completar por lizbeth
+    nombre = models.CharField(max_length=255)
+
+    def __str__(self):
+      return f'{self.nombre}'
 
 class Discografica(models.Model):
-   pass # a completar por joaquin
+    nombre = models.CharField(max_length=50)
+
+    def __str__(self):
+       return f'{self.nombre}'
 
 class Album(models.Model):
 

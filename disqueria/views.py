@@ -160,40 +160,60 @@ class MostrarInterprete(DetailView):
 
 
 class CrearGenero(CreateView):        
-    pass # a completar por lizbeth
+    model = Genero
+    template_name = "integrador/crear_genero.html"
+    success_url = 'proyecto'
+    fields = ['nombre']
 
 
 class ListarGenero(ListView):
-    pass # a completar por lizbeth
+     model = Genero
+     template_name = "integrador/listar_genero.html"
 
 
 class EditarGenero(UpdateView):
-    pass # a completar por lizbeth 
+    model = Genero
+    template_name ='integrador/editar_genero.html'
+    success_url = reverse_lazy('listar_genero')
+    fields = ['nombre'] 
 
 
 class EliminarGenero(DeleteView):
-    pass # a completar por lizbeth
+    model = Genero
+    template_name = "integrador/eliminar_genero.html"
+    success_url = reverse_lazy('listar_genero')
 
 
 class MostrarGenero(DetailView):
-    pass # a completar por lizbeth
+     model = Genero
+     template_name = 'integrador/mostrar_genero.html'
 
 
 class CrearDiscografica(CreateView):        
-    pass #a completar por joaquin
+    model = Discografica
+    template_name = "integrador/crear_discografica.html"
+    success_url = 'proyecto'
+    fields = ['nombre']
 
 
 class ListarDiscografica(ListView):
-    pass #a completar por joaquin
+    model = Discografica
+    template_name = "integrador/listar_discografica.html"
 
 
 class EditarDiscografica(UpdateView):
-    pass #a completar por joaquin
+    model = Discografica
+    template_name ='integrador/editar_discografica.html'
+    success_url = reverse_lazy('listar_discografica')
+    fields = ['nombre'] 
 
 
 class EliminarDiscografica(DeleteView):
-    pass #a completar por joaquin
+    model = Discografica
+    template_name = "integrador/eliminar_discografica.html"
+    success_url = reverse_lazy('listar_discografica')
 
 
 class MostrarDiscografica(DetailView):
-    pass #a completar por joaquin
+    model = Discografica
+    template_name = 'integrador/mostrar_discografica.html'

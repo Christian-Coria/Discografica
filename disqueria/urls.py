@@ -41,9 +41,17 @@ urlpatterns = [
     path('listar-interprete' , ListarInterprete.as_view(), name='listar_interprete'),
     path('mostrar-interprete/<int:pk>/' , MostrarInterprete.as_view(), name='mostrar_interprete'),
 
-    # los path de genero a completar por lizbeth
+    path('crear-genero' , CrearGenero.as_view(), name='crear_genero'),
+    path('eliminar-genero/<int:pk>' , EliminarGenero.as_view(), name='eliminar_genero'),
+    path('editar-genero/<int:pk>' , EditarGenero.as_view(), name='editar_genero'),
+    path('listar-genero' , ListarGenero.as_view(), name='listar_genero'),
+    path('mostrar-genero/<int:pk>/' , MostrarGenero.as_view(), name='mostrar_genero'),
 
-    # los path de discografica a completar por joaquin
-
+    path('crear-discografica' , CrearDiscografica.as_view(), name='crear_discografica'),
+    path('eliminar-discografica/<int:pk>' , EliminarDiscografica.as_view(), name='eliminar_discografica'),
+    path('editar-discografica/<int:pk>' , EditarDiscografica.as_view(), name='editar_discografica'),
+    path('listar-discografica' , ListarDiscografica.as_view(), name='listar_discografica'),
+    path('mostrar-discografica/<int:pk>/' , MostrarDiscografica.as_view(), name='mostrar_discografica'),
+    
 ]
 

@@ -14,11 +14,11 @@ class InterpreteCreationForm(forms.Form):
 
     
 class GeneroCreationForm(forms.Form):
-    pass # a completar por lizbeth
+    nombre = forms.CharField(max_length=255)
 
     
 class DiscograficaCreationForm(forms.Form):
-    pass #a completar por joaquin
+    nombre = forms.CharField(max_length=50)
 
     
 class TemaCreationForm(forms.Form):
