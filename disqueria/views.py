@@ -123,7 +123,7 @@ class EliminarTema(DeleteView):
 
 class MostrarTema(DetailView):
     model = Tema
-    template_name = 'mostrar_tema.html'
+    template_name = 'crud/mostrar_tema.html'
 
 
 class CrearInterprete(CreateView):        
