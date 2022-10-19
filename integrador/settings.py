@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'integrador.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'disqueria_ispc',
+        'NAME': 'disquerias_ispc',
         'USER': 'root',
         'PASSWORD' : 'Mateo31357058',
         'HOST': 'localhost',

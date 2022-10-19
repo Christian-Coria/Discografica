@@ -12,7 +12,7 @@
     </div>
     
     <div class="col-md-8 my-auto p-4">
-      <h1>Base de Datos<strong>DISQUERIA</strong></h1>
+      <h1>Base de Datos<strong> DISQUERIA</strong></h1>
       <h3>Realiza las operaciones en el siguiente Menu</h3>
 
       
@@ -35,12 +35,15 @@
         </div>
         <br>
         <div class="d-grid gap-2">
-        <a class="btn btn-primary" href={% url 'crear_album'%}>Cargar Album</a>
+          <a class="btn btn-success" href={% url 'crear_tema'%}>Cargar Tema</a>
         </div>
         <br>
         <div class="d-grid gap-2">
-          <a class="btn btn-primary" href={% url 'crear_tema'%}>Cargar Tema</a>
+        <a class="btn btn-danger" href={% url 'crear_album'%}>Cargar Album</a>
         </div>
+        <br>
+        
+        
     <div>
 </hr>
 {% endblock contenido %}

@@ -42,7 +42,7 @@ class CrearAlbum(CreateView):
     model = Album
     template_name = "crud/crear_album.html"
     success_url = 'proyecto'
-    fields = ['nombre','interprete','genero','cant_temas', 'discografica', 'formato', 'fec_lanzamiento', 'precio', 'cantidad']
+    fields = ['nombre','interprete','genero','cant_temas', 'discografica', 'formato', 'fec_lanzamiento', 'precio', 'cantidad', 'imagen']
 
 
 class ListarAlbum(ListView):
@@ -54,7 +54,7 @@ class EditarAlbum(UpdateView):
     model = Album
     template_name ='crud/editar_album.html'
     success_url = reverse_lazy('listar_albums')
-    fields = ['nombre','interprete','genero','cant_temas', 'discografica', 'formato', 'fec_lanzamiento', 'precio', 'cantidad'] 
+    fields = ['nombre','interprete','genero','cant_temas', 'discografica', 'formato', 'fec_lanzamiento', 'precio', 'cantidad', 'imagen'] 
 
 
 class EliminarAlbum(DeleteView):

@@ -9,11 +9,11 @@ class FormatoCreationForm(forms.Form):
     
 class InterpreteCreationForm(forms.Form):
     nombre = forms.CharField(max_length=255)
-    foto = forms.ImageField(upload_to="caratula", null=True, blank=True)
+    foto = forms.ImageField(upload_to="foto", null=True, blank=True)
 
 
 class GeneroCreationForm(forms.Form):
-    
+
     nombre = forms.CharField(max_length=255)
 
     
@@ -40,3 +40,4 @@ class AlbumCreationForm(forms.Form):
     fec_lanzamiento = forms.CharField(max_length=40)
     precio = forms.IntegerField()    
     cantidad = forms.IntegerField()
+    caratula = forms.ImageField(upload_to="caratula", null=True, blank=True)
