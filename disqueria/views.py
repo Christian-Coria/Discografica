@@ -24,18 +24,17 @@ class Contacto(TemplateView):
 class ProyectoIntegrador(TemplateView):
     template_name = "crud/proyecto.html"
 
-
-def buscar_album(request):
+def buscar(request):
     if 'q' in request.GET:
         q = request.GET['q']
         all_album_list = Album.objects.filter(Q(nombre__icontains=q)).order_by('nombre',
-        Q(genero__icontains=q)).order_by('genero'), (Q(interprete__icontains=q)).order_by('interprete')
+        Q(genero__icontains=q)).order_by('genero')
     else:
         all_album_list = Album.objects.all().order_by('nombre')
         all_album_list = Album.objects.all().order_by('genero')
-        all_album_list = Album.objects.all().order_by('interprete')
+        
 
-    return render(request, 'buscar_album.html', {"album":all_album_list})
+    return render(request, 'buscar.html', {"album":all_album_list})
 
 
 class CrearAlbum(CreateView):        
