@@ -26,9 +26,6 @@ urlpatterns = [
     path('listar-tema' , ListarTema.as_view(), name='listar_tema'),
     path('mostrar-tema/<int:pk>/' , MostrarTema.as_view(), name='mostrar_tema'),
 
-        #NOTA: respetar los nombres de las creacion de las funciones, si los mismos deciden cambiarlos deben a su vez, 
-               #cambiar el nombre en cada modulo del ruteo que corresponda!!!
-
     path('crear-formato' , CrearFormato.as_view(), name='crear_formato'),
     path('eliminar-formato/<int:pk>' , EliminarFormato.as_view(), name='eliminar_formato'),
     path('editar-formato/<int:pk>' , EditarFormato.as_view(), name='editar_formato'),

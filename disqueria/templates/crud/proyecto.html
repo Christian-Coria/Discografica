@@ -17,30 +17,30 @@
 
       
     
-  <hr>
-  <div class="d-grid gap-2">
-    <a class="btn btn-primary" href="" >Cargar Formato</a>
-    </div> 
-    <br>
-    <div class="d-grid gap-2">
-      <a class="btn btn-primary" href="">Cargar Genero</a>
-      </div>
-      <br>
-    <div class="d-grid gap-2">
-      <a class="btn btn-primary" href="">Cargar Discografica</a>
-    </div>
-    <br>
-    <div class="d-grid gap-2">
-      <a class="btn btn-primary" href="">Cargar Interprete</a>
-    </div>
-    <br>
-    <div class="d-grid gap-2">
-    <a class="btn btn-primary" href={% url 'crear_album'%}>Cargar Album</a>
-    </div>
-    <br>
-    <div class="d-grid gap-2">
-      <a class="btn btn-primary" href={% url 'crear_tema'%}>Cargar Tema</a>
-    </div>
-<div>
+      <hr>
+      <div class="d-grid gap-2">
+        <a class="btn btn-primary" href={% url 'crear_formato'%}>Cargar Formato</a>
+        </div> 
+        <br>
+        <div class="d-grid gap-2">
+          <a class="btn btn-primary" href={% url 'crear_genero'%}>Cargar Genero</a>
+          </div>
+          <br>
+        <div class="d-grid gap-2">
+          <a class="btn btn-primary" href={% url 'crear_discografica'%}>Cargar Discografica</a>
+        </div>
+        <br>
+        <div class="d-grid gap-2">
+          <a class="btn btn-primary" href={% url 'crear_interprete'%}>Cargar Interprete</a>
+        </div>
+        <br>
+        <div class="d-grid gap-2">
+        <a class="btn btn-primary" href={% url 'crear_album'%}>Cargar Album</a>
+        </div>
+        <br>
+        <div class="d-grid gap-2">
+          <a class="btn btn-primary" href={% url 'crear_tema'%}>Cargar Tema</a>
+        </div>
+    <div>
 </hr>
 {% endblock contenido %}

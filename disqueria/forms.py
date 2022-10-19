@@ -12,8 +12,8 @@ class InterpreteCreationForm(forms.Form):
     foto = forms.ImageField(upload_to="caratula", null=True, blank=True)
 
 
-    
 class GeneroCreationForm(forms.Form):
+    
     nombre = forms.CharField(max_length=255)
 
     

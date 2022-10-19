@@ -70,33 +70,31 @@ class MostrarAlbum(DetailView):
 
 class CrearFormato(CreateView):
     model = Formato
-    template_name = "integrador/crear_formato.html"
+    template_name = "crud/crear_formato.html"
     success_url = 'proyecto'
     fields = ['tipo']
 
 class ListarFormato(ListView):
     model = Formato
-    template_name = "integrador/listar_formato.html"
+    template_name = "crud/listar_formato.html"
 
 
 class EditarFormato(UpdateView):
     model = Formato
-    template_name ='integrador/editar_formato.html'
+    template_name ='crud/editar_formato.html'
     success_url = reverse_lazy('listar_formato')
     fields = ['tipo'] 
 
 
 class EliminarFormato(DeleteView):
     model =  Formato
-    template_name = "integrador/eliminar_formato.html"
+    template_name = "crud/eliminar_formato.html"
     success_url = reverse_lazy('listar_formato')
-
 
 
 class MostrarFormato(DetailView):
     model = Formato
-    template_name = 'integrador/mostrar_formato.html'
-
+    template_name = 'crud/mostrar_formato.html'
 
 
 class CrearTema(CreateView):        
@@ -158,62 +156,61 @@ class MostrarInterprete(DetailView):
     template_name = 'crud/mostrar_interprete.html'
 
 
-
 class CrearGenero(CreateView):        
     model = Genero
-    template_name = "integrador/crear_genero.html"
+    template_name = "crud/crear_genero.html"
     success_url = 'proyecto'
     fields = ['nombre']
 
 
 class ListarGenero(ListView):
      model = Genero
-     template_name = "integrador/listar_genero.html"
+     template_name = "crud/listar_genero.html"
 
 
 class EditarGenero(UpdateView):
     model = Genero
-    template_name ='integrador/editar_genero.html'
+    template_name ='crud/editar_genero.html'
     success_url = reverse_lazy('listar_genero')
     fields = ['nombre'] 
 
 
 class EliminarGenero(DeleteView):
     model = Genero
-    template_name = "integrador/eliminar_genero.html"
+    template_name = "crud/eliminar_genero.html"
     success_url = reverse_lazy('listar_genero')
 
 
 class MostrarGenero(DetailView):
      model = Genero
-     template_name = 'integrador/mostrar_genero.html'
+     template_name = 'crud/mostrar_genero.html'
 
 
 class CrearDiscografica(CreateView):        
     model = Discografica
-    template_name = "integrador/crear_discografica.html"
+    template_name = "crud/crear_discografica.html"
     success_url = 'proyecto'
     fields = ['nombre']
 
 
 class ListarDiscografica(ListView):
     model = Discografica
-    template_name = "integrador/listar_discografica.html"
+    template_name = "crud/listar_discografica.html"
 
 
 class EditarDiscografica(UpdateView):
     model = Discografica
-    template_name ='integrador/editar_discografica.html'
+    template_name ='crud/editar_discografica.html'
     success_url = reverse_lazy('listar_discografica')
     fields = ['nombre'] 
 
 
 class EliminarDiscografica(DeleteView):
     model = Discografica
-    template_name = "integrador/eliminar_discografica.html"
+    template_name = "crud/eliminar_discografica.html"
     success_url = reverse_lazy('listar_discografica')
 
 
 class MostrarDiscografica(DetailView):
     model = Discografica
-    template_name = 'integrador/mostrar_discografica.html'
+    template_name = 'crud/mostrar_discografica.html'
