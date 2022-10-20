@@ -27,9 +27,7 @@ class ProyectoIntegrador(TemplateView):
 
 
 def buscar_interprete(request):
-<<<<<<< HEAD
-    pass
-=======
+
     if 'q' in request.GET:
         q = request.GET['q']
         all_album_list = Album.objects.filter(interprete__nombre__icontains=q)).order_by('interprete') 
@@ -39,7 +37,7 @@ def buscar_interprete(request):
         
 
     return render(request, 'buscar.html', {"album":all_album_list})
->>>>>>> cacdcc8971fa6d7b316a4499cb89205396c4b868
+
 
 
 def buscar(request):
