@@ -24,6 +24,7 @@ class Contacto(TemplateView):
 class ProyectoIntegrador(TemplateView):
     template_name = "crud/proyecto.html"
 
+
 def buscar(request):
     if 'q' in request.GET:
         q = request.GET['q']
@@ -35,6 +36,7 @@ def buscar(request):
         
 
     return render(request, 'buscar.html', {"album":all_album_list})
+   
 
 
 class CrearAlbum(CreateView):        

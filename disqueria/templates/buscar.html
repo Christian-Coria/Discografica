@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 
 {% block title %} 
 Buscar Album
@@ -7,7 +7,7 @@ Buscar Album
 {% block contenido %}
 <form>
     <div class="input-group input-group-sm mb-3 mt-4">
-        <input name="q" type="text" class="form-control" placeholder="buscar Album por: Nombre, Interprete o Genero...">
+        <input name="q" type="text" class="form-control" placeholder="Buscar Album por: Nombre, Genero...">
         <button class="btn btn-secondary"><i class="fas fa-search"></i>Buscar</button>
         <a href={% url 'buscar' %}  class="btn btn-dark" style="margin-left: 2px;"><i class="fas fa-sync-alt"></i></a>
     </div>
@@ -23,7 +23,8 @@ Buscar Album
                 <th>Genero</th>
                 <th>Discografica</th>
                 <th>Formato</th>
-                <th>fech. Lanzamiento</th>
+                <th>temas</th>
+                <th>fech. Lanz.</th>
                 <th>Precio</th>
                 <th>Stock</th>
                 <th>Caratula</th>
@@ -35,9 +36,10 @@ Buscar Album
             <td>{{ album.id }}</td>
             <td>{{ album.nombre }}</td>
             <td>{{ album.interprete }}</td>
-            <td>{{ album.cant_temas }}</td>
+            <td>{{ album.genero }}</td>     
             <td>{{ album.discografica }}</td>
             <td>{{ album.formato }}</td>
+            <td>{{ album.cant_temas }}</td>
             <td>{{ album.fec_lanzamiento }}</td>
             <td>{{ album.precio }}</td>
             <td>{{ album.cantidad }}</td>
