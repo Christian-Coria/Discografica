@@ -30,7 +30,7 @@ def buscar_interprete(request):
 
     if 'q' in request.GET:
         q = request.GET['q']
-        all_album_list = Album.objects.filter(interprete__nombre__icontains=q)).order_by('interprete') 
+        all_album_list = Album.objects.filter(interprete__nombre__icontains=q).order_by('interprete') 
             
     else:
         all_album_list = Album.objects.all().order_by('interprete')                
