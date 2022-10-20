@@ -18,13 +18,23 @@ Muestra de INTERPRETE
            
         </div>
         <p> Foto: </p>
-        {% if object.imagen %}
-                <img src="{{ object.imagen.url }}"alt="" height="150px">
+        {% if object.foto %}
+                <img src="{{ object.foto.url }}"alt="" height="200px">
             {% endif %}
     </ul>
+    <div>
+        {% for image in object.foto_object.all %}
+        <img style="width:75%;margin:5%" src="{{ foto.foto_object.url }}">
+        {% endfor %}
+        </div>
     <p>
         <div class="d-grid gap-2">
         <a class="btn btn-primary" href={% url 'proyecto'%}>Volver a BD</a>
         </div>      
 </div>
+<center>
+    <br>
+<div class="col-md-4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSVQYte-rHB1jvinpONunVR5MEOd7Tbzso17QBTZR7RoUjmBU1Tb7awyiFy1kV33GaIQA&usqp=CAU"width="550" height="500" />  
+  </div>
 {% endblock contenido %}

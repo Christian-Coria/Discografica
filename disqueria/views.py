@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from django.db.models import Q
 from django.http import HttpResponse
 from .models import  Formato, Album, Discografica, Genero, Interprete, Tema
+from django.db.models import Prefetch
 
 
 def home(request):
@@ -25,6 +26,10 @@ class ProyectoIntegrador(TemplateView):
     template_name = "crud/proyecto.html"
 
 
+def buscar_interprete(request):
+    pass
+
+
 def buscar(request):
     if 'q' in request.GET:
         q = request.GET['q']
@@ -37,7 +42,6 @@ def buscar(request):
 
     return render(request, 'buscar.html', {"album":all_album_list})
    
-
 
 class CrearAlbum(CreateView):        
     model = Album

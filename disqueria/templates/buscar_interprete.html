@@ -1,13 +1,13 @@
 {% extends 'base2.html' %}
 
 {% block title %} 
-Buscar ALBUM y GENERO
+Buscar Interprete
 {% endblock title%}
 
 {% block contenido %}
 <form>
     <div class="input-group input-group-sm mb-3 mt-4">
-        <input name="q" type="text" class="form-control" placeholder="Buscar Album por: Nombre, Genero...">
+        <input name="q" type="text" class="form-control" placeholder="Buscar Album por: Interprete...">
         <button class="btn btn-secondary"><i class="fas fa-search"></i>Buscar</button>
         <a href={% url 'buscar' %}  class="btn btn-dark" style="margin-left: 2px;"><i class="fas fa-sync-alt"></i></a>
     </div>

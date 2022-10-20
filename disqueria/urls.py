@@ -3,7 +3,7 @@ from django.urls import path
 from .views import (home, Contacto, About, ProyectoIntegrador, CrearFormato, EliminarFormato, EditarFormato, ListarFormato ,MostrarFormato,
 CrearAlbum, EliminarAlbum ,EditarAlbum , ListarAlbum, MostrarAlbum, CrearTema, EliminarTema, EditarTema, ListarTema, MostrarTema, 
 CrearInterprete, EliminarInterprete, EditarInterprete, ListarInterprete, CrearGenero, MostrarInterprete, EliminarGenero, EditarGenero, MostrarGenero ,ListarGenero,
-CrearDiscografica,  EliminarDiscografica, EditarDiscografica, ListarDiscografica,  MostrarDiscografica , buscar)
+CrearDiscografica,  EliminarDiscografica, EditarDiscografica, ListarDiscografica,  MostrarDiscografica , buscar, buscar_interprete)
 
 urlpatterns = [
 
@@ -12,6 +12,7 @@ urlpatterns = [
     path('contacto/', Contacto.as_view(), name="contacto"),
     path('about/', About.as_view(), name="about"),
     path('buscar/', buscar, name="buscar"),
+    path('buscar-interprete/', buscar_interprete, name="buscar_interprete"),
     path('proyecto',ProyectoIntegrador.as_view(), name="proyecto"),         
     
     path('crear-album' , CrearAlbum.as_view(), name='crear_album'),

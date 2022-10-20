@@ -8,7 +8,7 @@
 <br>
 <header class="row bg-black">
     <div class="col-md-4">
-      <img src="https://previews.123rf.com/images/iconcraftstudio/iconcraftstudio1611/iconcraftstudio161100016/66794465-bug-en-el-icono-plano-de-la-base-de-datos-computaci%C3%B3n-ilustraci%C3%B3n-vectorial.jpg"width="550" height="500" />  
+      <img src="https://previews.123rf.com/images/iconcraftstudio/iconcraftstudio1611/iconcraftstudio161100016/66794465-bug-en-el-icono-plano-de-la-base-de-datos-computaci%C3%B3n-ilustraci%C3%B3n-vectorial.jpg"width="550" height="700" />  
     </div>
     
     <div class="col-md-8 my-auto p-4">
@@ -31,29 +31,30 @@
         </div>
         <br>
         <div class="d-grid gap-2">
-          <a class="btn btn-primary" href={% url 'crear_interprete'%}>Cargar Interprete</a>
+          <a class="btn btn-info" href={% url 'crear_interprete'%}>Cargar Interprete</a>
         </div>
         <br>
         <div class="d-grid gap-2">
-          <a class="btn btn-danger" href={% url 'crear_album'%}>Cargar Album</a>
+          <a class="btn btn-success" href={% url 'crear_album'%}>Cargar Album</a>
           </div>
           <br>
         <div class="d-grid gap-2">
-          <a class="btn btn-success" href={% url 'crear_tema'%}>Cargar Tema</a>
+          <a class="btn btn-danger" href={% url 'crear_tema'%}>Cargar Tema</a>
         </div>
         <br>
         
-        <a class="btn btn-success"<a href={% url 'listar_tema'  %}>Temas</a>
-        <a class="btn btn-danger"<a href={% url 'listar_album'  %}>Albumes</a>
-        <a class="btn btn-primary"<a href={% url 'listar_interprete'  %}>Interpretes </a>
+        <a class="btn btn-danger"<a href={% url 'listar_tema'  %}>Temas</a>
+        <a class="btn btn-success"<a href={% url 'listar_album'  %}>Albumes</a>
+        <a class="btn btn-info"<a href={% url 'listar_interprete'  %}>Interpretes </a>
         <a class="btn btn-primary"<a href={% url 'listar_discografica'  %}>Discograficas</a>
         <a class="btn btn-primary"<a href={% url 'listar_genero'  %}>Generos</a>
         <a class="btn btn-primary"<a href={% url 'listar_formato'  %}>Formatos</a>
         <br>
         <br>
-        <h5> Lista de Albums y/o Genero Musical </h5>
+        <h5> Lista de Albums, Genero Musical o por Interprete</h5>
         <br>
         <a class="btn btn-warning"<a href={% url 'buscar'  %}>Busqueda Album y Genero Musical</a>
+        <a class="btn btn-info"<a href={% url 'buscar_interprete'  %}>Busqueda por Interprete</a>
         
     <div>
 </hr>
