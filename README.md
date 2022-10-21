@@ -27,7 +27,9 @@ El sistema debe proveer los siguientes requerimientos por parte del cliente:
 
 Cosas que puedes hacer::
 
-[==> Video de Funcionalidades <==](###) <- a completar!
+[==> Video de Funcionalidades <==](https://www.loom.com/share/06ffe088ba6f4e33a182fb5ef1b79a85) 
+
+[==> Video de Busquedas <==](https://www.loom.com/share/81f684285de14e0aa58a94b92a5a70eb)
 
 
 - Podras ver como se desarrolla un C.R.U.D en Django 'Usando Class Base Views'.
