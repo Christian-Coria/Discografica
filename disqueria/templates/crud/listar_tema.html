@@ -21,7 +21,7 @@ Lista de Temas
     <h1>
      <ul class="list-grup-item list-grup-flush">
         {% for tema in object_list %}
-            {{tema.nombre}}
+            {{tema.titulo}}
             <li class="list-grup-item">
                 
                 <a class="btn btn-primary"<a href={% url 'mostrar_tema' tema.id %}>Mostrar Tema</a>

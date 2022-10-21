@@ -31,23 +31,29 @@ def buscar_interprete(request):
     if 'q' in request.GET:
         q = request.GET['q']
         all_album_list = Album.objects.filter(interprete__nombre__icontains=q).order_by('interprete') 
-            
     else:
         all_album_list = Album.objects.all().order_by('interprete')                
         
+    return render(request, 'buscar_interprete.html', {"album":all_album_list})
 
-    return render(request, 'buscar.html', {"album":all_album_list})
 
+def buscar_genero(request):
+
+    if 'q' in request.GET:
+        q = request.GET['q']
+        all_album_list = Album.objects.filter(genero__nombre__icontains=q).order_by('genero')
+    else:
+        all_album_list = Album.objects.all().order_by('genero')
+        
+    return render(request, 'buscar_genero.html', {"album":all_album_list})
 
 
 def buscar(request):
     if 'q' in request.GET:
         q = request.GET['q']
-        all_album_list = Album.objects.filter(Q(nombre__icontains=q)).order_by('nombre',
-        Q(genero__icontains=q)).order_by('genero')
+        all_album_list = Album.objects.filter(Q(nombre__icontains=q)).order_by('nombre')
     else:
         all_album_list = Album.objects.all().order_by('nombre')
-        all_album_list = Album.objects.all().order_by('genero')
         
 
     return render(request, 'buscar.html', {"album":all_album_list})
@@ -68,7 +74,7 @@ class ListarAlbum(ListView):
 class EditarAlbum(UpdateView):
     model = Album
     template_name ='crud/editar_album.html'
-    success_url = reverse_lazy('listar_albums')
+    success_url = reverse_lazy('listar_album')
     fields = ['nombre','interprete','genero','cant_temas', 'discografica', 'formato', 'fec_lanzamiento', 'precio', 'cantidad', 'imagen'] 
 
 
