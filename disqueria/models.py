@@ -51,7 +51,7 @@ class Album(models.Model):
 
 class Tema(models.Model):
     titulo = models.CharField(max_length=255)
-    duracion = models.IntegerField()
+    duracion = models.CharField(max_length=25)
     autor = models.CharField(max_length=255)
     compositor = models.CharField(max_length=255)
     cod_album = models.ForeignKey(Album,null=True, on_delete=models.CASCADE)
