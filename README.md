@@ -25,9 +25,15 @@ El sistema debe proveer los siguientes requerimientos por parte del cliente:
 
 [==> Casos de Prueba <==](https://docs.google.com/spreadsheets/d/1XS3uoYypWx3NZjh3MMgHA_54NBxl6aaDTBgHDIhAgvY/edit?usp=sharing)
 
+![](./portada.png)
+
 Cosas que puedes hacer::
 
+![](./menu.png)
+
 [==> Video de Funcionalidades <==](https://www.loom.com/share/06ffe088ba6f4e33a182fb5ef1b79a85) 
+
+![](./busqueda.png)
 
 [==> Video de Busquedas <==](https://www.loom.com/share/81f684285de14e0aa58a94b92a5a70eb)
 
