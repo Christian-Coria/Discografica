@@ -21,24 +21,27 @@ El sistema debe proveer los siguientes requerimientos por parte del cliente:
 ![](./esquema-BD.png)
 
 # Tecnologia Utilizada Django (Python, Bootstrap 5, Html)
-## Base de datos Utilizada MySQL (aunque es posible usar mysqlite3 por defecto o otras bases de datos como Polgrest SQL con la conf.      correspondiente)
+## Base de datos Utilizada MySQL (aunque es posible usar sqlite3 por defecto o otras bases de datos como Polgrest SQL con la conf.      correspondiente)
 
 [==> Casos de Prueba <==](https://docs.google.com/spreadsheets/d/1XS3uoYypWx3NZjh3MMgHA_54NBxl6aaDTBgHDIhAgvY/edit?usp=sharing)
 
 ![](./portada.png)
 
-Cosas que puedes hacer::
-
-![](./menu.png)
+## Cosas que puedes hacer:
 
 [==> Video de Funcionalidades <==](https://www.loom.com/share/06ffe088ba6f4e33a182fb5ef1b79a85) 
 
-![](./busqueda.png)
+![](./menu.png)
+
+
+
+## Busqueda en BD
 
 [==> Video de Busquedas <==](https://www.loom.com/share/81f684285de14e0aa58a94b92a5a70eb)
 
+![](./busqueda.png)
 
-- Podras ver como se desarrolla un C.R.U.D en Django 'Usando Class Base Views'.
+## Datos de Prueba como Ejemplo Sugeridos
 
 [!Datos de Prueba](https://docs.google.com/document/d/1Gkf8ZHBYjUw1yerKkbCGFeuYdfOyDwW7CUbWpGJ4Wjw/edit?usp=sharing)
 
