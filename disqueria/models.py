@@ -48,6 +48,7 @@ class Album(models.Model):
     def __str__(self):
        return f'{self.nombre}'
 
+  
 
 class Tema(models.Model):
     titulo = models.CharField(max_length=255)
