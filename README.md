@@ -20,10 +20,10 @@ El sistema debe proveer los siguientes requerimientos por parte del cliente:
 
 ![](./esquema-BD.png)
 
-# Tecnologia Utilizada Django (Python, Bootstrap 5, Html)
+# Tecnologia Django (Python, Bootstrap 5, Html, ,MySQL)
 ## Base de datos Utilizada MySQL (aunque es posible usar sqlite3 por defecto o otras bases de datos como Polgrest SQL con la conf.      correspondiente)
 
-[==> Casos de Prueba <==](https://docs.google.com/spreadsheets/d/1XS3uoYypWx3NZjh3MMgHA_54NBxl6aaDTBgHDIhAgvY/edit?usp=sharing)
+[==> Testing (Casos de Prueba) <==](https://docs.google.com/spreadsheets/d/1XS3uoYypWx3NZjh3MMgHA_54NBxl6aaDTBgHDIhAgvY/edit?usp=sharing)
 
 ![](./portada.png)
 
